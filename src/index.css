@@ -19,16 +19,20 @@
 
 :root[data-theme='light'] {
   --primary-color: #4f46e5;
-  --primary-glow: rgba(79, 70, 229, 0.2);
-  --secondary-color: #9333ea;
+  --primary-glow: rgba(79, 70, 229, 0.1);
+  --secondary-color: #7c3aed;
   --accent-color: #db2777;
-  --bg-color: #f8fafc;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --card-border: rgba(0, 0, 0, 0.05);
+  --bg-color: #f1f5f9;
+  /* Softer slate white */
+  --card-bg: rgba(255, 255, 255, 0.95);
+  /* More opaque for contrast */
+  --card-border: rgba(0, 0, 0, 0.08);
   --text-main: #0f172a;
-  --text-muted: #475569;
-  --shadow-premium: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  --header-gradient: linear-gradient(135deg, #1e293b 0%, var(--primary-color) 50%, var(--accent-color) 100%);
+  /* Deep slate for high legibility */
+  --text-muted: #64748b;
+  /* Medium slate */
+  --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --header-gradient: linear-gradient(135deg, #0f172a 0%, var(--primary-color) 50%, var(--accent-color) 100%);
 }
 
 * {
