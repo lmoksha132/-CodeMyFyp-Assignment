@@ -4,6 +4,7 @@ import UserCard from '../components/UserCard';
 import Loader from '../components/Loader';
 import ErrorMessage from '../components/ErrorMessage';
 import SearchBar from '../components/SearchBar';
+import ThemeToggle from '../components/ThemeToggle';
 import './Home.css';
 
 /**
@@ -18,6 +19,20 @@ const Home = () => {
     const [error, setError] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
     const [dataSource, setDataSource] = useState('Users');
+    const [theme, setTheme] = useState(() => {
+        const savedTheme = localStorage.getItem('app-theme');
+        if (savedTheme) return savedTheme;
+        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    });
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('app-theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(prev => prev === 'light' ? 'dark' : 'light');
+    };
 
     // Fetch data on component mount with fallback logic
     useEffect(() => {
