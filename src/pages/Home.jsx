@@ -63,7 +63,10 @@ const Home = () => {
     return (
         <div className="home-container">
             <header className="page-header">
-                <h1>Responsive {dataSource === 'Users' ? 'User' : 'Product'} Explorer</h1>
+                <div className="header-top">
+                    <h1>Responsive {dataSource === 'Users' ? 'User' : 'Product'} Explorer</h1>
+                    <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+                </div>
                 <p>
                     {dataSource === 'Users'
                         ? 'Explore and connect with users in our network.'
