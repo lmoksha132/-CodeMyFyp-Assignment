@@ -1,0 +1,119 @@
+.home-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    animation: slideDown 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #fff 0%, var(--primary-color) 50%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.3));
+}
+
+.page-header p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile-First Grid Layout */
+.user-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    color: var(--text-muted);
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 600px) {
+    .user-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-container {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 992px) {
+    .user-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large Desktop: 4 columns */
+@media (min-width: 1200px) {
+    .user-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.page-footer {
+    margin-top: 5rem;
+    padding: 2.5rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    background: rgba(15, 23, 42, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.designer-name {
+    color: var(--primary-color);
+    font-weight: 700;
+    background: linear-gradient(to right, var(--primary-color), #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
