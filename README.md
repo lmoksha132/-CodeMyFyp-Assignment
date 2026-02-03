@@ -2,6 +2,8 @@
 
 **Developed by: Lakshmi Moksha Boya**
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://responsiveuserexplorer.netlify.app/)
+
 A professional, production-ready frontend application that demonstrates modern React best practices, stunning aesthetics, and resilient API integration.
 
 ## 🚀 Project Overview
@@ -43,19 +45,6 @@ A professional, production-ready frontend application that demonstrates modern R
    ```bash
    npm run build
    ```
-
-## 🌐 Deployment Steps
-
-The project is ready to be deployed on **Vercel** or **Netlify**:
-
-### Vercel
-1. Connect your repository to Vercel.
-2. Ensure the build command is `npm run build` and output directory is `dist`.
-3. Click "Deploy".
-
-### Netlify
-1. Drag and drop the `dist` folder after running `npm run build`.
-2. Or connect your repository and use the same build settings as above.
 
 ## 🧠 Code Quality & Structure
 
