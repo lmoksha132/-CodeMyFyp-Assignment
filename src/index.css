@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark;
   /* Dark Theme (Default) */
   --primary-color: #6366f1;
   --primary-glow: rgba(99, 102, 241, 0.4);
@@ -17,21 +18,20 @@
   --header-gradient: linear-gradient(135deg, #fff 0%, var(--primary-color) 50%, var(--accent-color) 100%);
 }
 
-:root[data-theme='light'] {
+:root[data-theme='light'],
+[data-theme='light'] {
+  color-scheme: light;
   --primary-color: #4f46e5;
   --primary-glow: rgba(79, 70, 229, 0.1);
   --secondary-color: #7c3aed;
   --accent-color: #db2777;
-  --bg-color: #f1f5f9;
-  /* Softer slate white */
-  --card-bg: rgba(255, 255, 255, 0.95);
-  /* More opaque for contrast */
+  --bg-color: #f8fafc;
+  /* Slightly brighter for mobile */
+  --card-bg: rgba(255, 255, 255, 0.9);
   --card-border: rgba(0, 0, 0, 0.08);
   --text-main: #0f172a;
-  /* Deep slate for high legibility */
   --text-muted: #64748b;
-  /* Medium slate */
-  --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --shadow-premium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --header-gradient: linear-gradient(135deg, #0f172a 0%, var(--primary-color) 50%, var(--accent-color) 100%);
 }
 

@@ -13,6 +13,7 @@
     box-shadow: var(--shadow-premium);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 .theme-toggle:hover {
