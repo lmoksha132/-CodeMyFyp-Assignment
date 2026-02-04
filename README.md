@@ -2,7 +2,7 @@
 
 **Developed by: Lakshmi Moksha Boya**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://responsiveuserexplorer.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://code-my-fyp-assignment.vercel.app/)
 
 A professional, production-ready frontend application that demonstrates modern React best practices, stunning aesthetics, and resilient API integration.
 
